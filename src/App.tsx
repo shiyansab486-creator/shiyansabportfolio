@@ -1594,28 +1594,27 @@ function ContactSection() {
   };
 
   const socialLinks = [
-    {
-      label: "LinkedIn",
-      href: profile.linkedin,
-      icon: "https://cdn-icons-png.flaticon.com/512/174/174857.png",
-    },
-    {
-      label: "Instagram",
-      href: "#",
-      icon: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
-    },
-    {
-      label: "Gmail",
-      href: `mailto:${profile.email}`,
-      icon: "https://cdn-icons-png.flaticon.com/512/732/732200.png",
-    },
-    {
-      label: "GitHub",
-      href: profile.github,
-      icon: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
-    },
-  ];
-
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/shiyansab/",
+    icon: "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+  },
+  {
+    label: "Instagram",
+    href: "#", // apna Instagram URL yahan daal dena
+    icon: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
+  },
+  {
+    label: "Gmail",
+    href: "mailto:shiyansab486@gmail.com",
+    icon: "https://cdn-icons-png.flaticon.com/512/732/732200.png",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/shiyansab486-creator",
+    icon: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+  },
+];
   return (
     <section id="contact" className="section-shell py-20 md:py-28">
       <div className="grid gap-10 lg:grid-cols-[0.42fr_0.58fr] lg:items-start">
@@ -1642,31 +1641,39 @@ function ContactSection() {
             </div>
           </div>
           <div className="mt-8">
-            <p className="mono-font mb-4 text-[11px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
-              Social Links
-            </p>
-            <div className="flex flex-wrap gap-3">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith("mailto:") || link.href === "#" ? undefined : "_blank"}
-                rel={link.href.startsWith("mailto:") || link.href === "#" ? undefined : "noreferrer"}
-                className="group relative inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-transparent transition hover:scale-110 hover:border-[var(--accent-blue)]"
-                data-cursor="link"
-                data-cursor-fill="true"
-                aria-label={link.label}
-              >
-                <GlassEffect as="div" className="absolute inset-0 z-0 rounded-2xl">{null}</GlassEffect>
-                <img
-                  src={link.icon}
-                  alt=""
-                  className="relative z-10 h-7 w-7 object-contain transition group-hover:brightness-125"
-                />
-              </a>
-            ))}
-            </div>
-          </div>
+  <p className="mono-font mb-4 text-[11px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
+    Social Links
+  </p>
+
+  <div className="flex flex-wrap gap-3">
+    {socialLinks.map((link) => (
+      <a
+        key={link.label}
+        href={link.href}
+        target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+        rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+        className="group relative inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-transparent transition hover:scale-110 hover:border-[var(--accent-blue)]"
+        data-cursor="link"
+        data-cursor-fill="true"
+        aria-label={link.label}
+        title={link.label}
+      >
+        <GlassEffect
+          as="div"
+          className="absolute inset-0 z-0 rounded-2xl"
+        >
+          {null}
+        </GlassEffect>
+
+        <img
+          src={link.icon}
+          alt={link.label}
+          className="relative z-10 h-7 w-7 object-contain transition group-hover:brightness-125"
+        />
+      </a>
+    ))}
+  </div>
+</div>
         </div>
 
         <form onSubmit={handleSubmit} className="relative rounded-[32px] border border-white/8 bg-[var(--surface)] p-6 md:p-8">
