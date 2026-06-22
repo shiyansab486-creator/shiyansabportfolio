@@ -1601,9 +1601,9 @@ function ContactSection() {
   },
   {
     label: "Instagram",
-    href: "#", // apna Instagram URL yahan daal dena
+    href: "https://www.instagram.com/shinu_shiyan_/",
     icon: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
-  },
+},
   {
     label: "Gmail",
     href: "mailto:shiyansab486@gmail.com",
