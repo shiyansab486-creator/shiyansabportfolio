@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <circle cx="190" cy="110" r="220" fill="#FF6B35" fill-opacity="0.12"/>
+  <circle cx="980" cy="520" r="260" fill="#D4AF37" fill-opacity="0.12"/>
+  <rect x="66" y="66" width="1068" height="498" rx="32" fill="#111111" stroke="rgba(255,255,255,0.08)"/>
+  <text x="108" y="190" fill="#FF6B35" font-size="20" font-family="Inter, Arial, sans-serif" letter-spacing="6">AHAMMAD SHIYAN SAB</text>
+  <text x="108" y="288" fill="white" font-size="74" font-weight="700" font-family="Inter, Arial, sans-serif">Digital Marketer &amp;</text>
+  <text x="108" y="372" fill="white" font-size="74" font-weight="700" font-family="Inter, Arial, sans-serif">Web Developer</text>
+  <text x="108" y="442" fill="#A0A0A0" font-size="28" font-family="Inter, Arial, sans-serif">I Build Brands, Create Stories &amp; Develop Digital Experiences.</text>
+  <line x1="1028" y1="114" x2="1078" y2="164" stroke="#FF6B35" stroke-width="4" stroke-linecap="round"/>
+</svg>
